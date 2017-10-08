@@ -1,0 +1,138 @@
+body
+{
+  background-color:#000;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 50px;
+}
+
+.author{
+  color: #FFF;
+  bottom:0;
+  right:0;
+  position: absolute;
+}
+
+#instructions img{
+  transform: rotate(180deg);
+}
+#instructions{
+  margin-top: 90px;
+  color: #FFF;
+  font-size: 30px;
+  text-align: center;
+}
+
+.logo{
+  width: 300px;
+  margin-left: 20px;
+
+}
+
+.social{
+  width: 80px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.replay{
+  width: 80px;
+  position: absolute;
+  left: 40%;
+}
+
+#lives{
+  margin-top: 40px;
+  float: left;
+}
+
+#SODVI{
+  padding-top: 10%;
+  position: absolute; 
+  display: block; 
+  overflow: hidden; 
+  height: 480px; 
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+#welcome{
+  color: #FFF;
+}
+
+.container
+{
+  margin:0 auto;
+  width:90%;
+}
+
+.perspective
+{
+  background-image: url("../img/Mark.png");
+  background-size: 187px 314px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: inline;
+  float: left;
+  height: 314px;
+  width: 187px;
+  margin: 20px;
+  margin-left: 0px;
+  -webkit-perspective: 450;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+        
+.thumb
+{
+    background-image: url("../img/Door.png");
+    background-size: 147px 274px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 147px;
+    height: 274px;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+    transition: 1s transform linear;
+    transform-origin: left;
+    margin-left: 33px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.thumbOpened
+{
+    transform: rotateY(-90deg);
+    transform-origin: 8px;
+    transition: .5s linear;
+}
+
+.door
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+@keyframes go {
+  100%{
+    opacity:1;
+    transform:rotateY(0deg);
+  }
+}
